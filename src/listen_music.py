@@ -26,7 +26,7 @@ class ListenMusic(object):
         # parameter
         self.frame_num = rospy.get_param("~frame_num", 148)
         r = rospkg.RosPack()
-        self.folder = r.get_path('respeaker') + '/output/'+res
+        self.folder = r.get_path('respeaker') + '/output/'
         nyq = 0.5 * 16000
         self.b, self.a = butter(5, 4000./nyq, btype='lowpass')
 
@@ -57,7 +57,7 @@ class ListenMusic(object):
             self.frames[respeaker] = np.concatenate((self.frames[respeaker],np.array(sound_msg.data).astype(np.int16)),axis=0)
         
         if self.frame_num == 0:
-            passo ?
+            pass
         elif self.count[respeaker] == self.frame_num:
             print("save sound ", respeaker, ': ', self.frame_counter[respeaker])
             self.play_music(self.frames[respeaker], self.frame_counter[respeaker], respeaker)

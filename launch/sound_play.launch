@@ -1,5 +1,5 @@
 <launch>
-	<arg name="pkg_name" value="loc_res"/>
+	<arg name="pkg_name" value="respeaker"/>
 	<arg name="node_name" value="sound_play"/>
 	<arg name="veh" doc="a veh"/>
 	<arg name="con" doc="continue playing or save to file"/>
