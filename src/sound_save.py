@@ -15,7 +15,7 @@ class SoundSave(object):
 
         res = rospy.get_param("~res")
 	time = datetime.datetime.now()
-        self.filename = rospkg.RosPack().get_path('respeaker')+"/"+time.year+"/"+time.month+"/"+time.day+"/"+time.hour+"/"+time.minute+"/"+res
+        self.filename = rospkg.RosPack().get_path('respeaker')+"/"+time.year+"-"+time.month+"-"+time.day+"-"+time.hour+"-"+time.minute+"/"+res
 
         self.frame = 0
 
