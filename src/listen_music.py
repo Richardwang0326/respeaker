@@ -26,7 +26,7 @@ class ListenMusic(object):
         # parameter
         self.frame_num = rospy.get_param("~frame_num", 148)
         r = rospkg.RosPack()
-        self.folder = r.get_path('loc_res') + '/output/'
+        self.folder = r.get_path('respeaker') + '/output/'+res
         nyq = 0.5 * 16000
         self.b, self.a = butter(5, 4000./nyq, btype='lowpass')
 
