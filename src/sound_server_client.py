@@ -18,7 +18,7 @@ import socket
 
 import rospy
 from std_msgs.msg import Int16MultiArray
-from sound_localize.msg import SoundRaw
+from respeaker.msg import SoundRaw
 
 logger              = logging.getLogger('MicArray')
 
@@ -27,7 +27,7 @@ chunk_lock = True
 azimuth_global = 0
 chunk_time = None
 
-IP_RES = {"10.42.0.30": "locobot"}
+IP_RES = {"10.42.0.227": "locobot"}
 
 def rec_thread(quit_event,respeaker):
     # conn, addr = s.accept()
