@@ -204,7 +204,7 @@ def main():
     # wait for the thread
     t.join()
 if __name__ == '__main__':
-    HOST = '10.42.0.30' # The respeaker ip 
+    HOST = '10.42.0.227' # The respeaker ip 
     PORT = 8001
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # s.connect((HOST, PORT))
