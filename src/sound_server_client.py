@@ -27,7 +27,7 @@ chunk_lock = True
 azimuth_global = 0
 chunk_time = None
 
-IP_RES = {"10.42.0.227": "locobot"}
+IP_RES = {"10.42.0.227": "locobot"}   # The respeaker ip
 
 def rec_thread(quit_event,respeaker):
     # conn, addr = s.accept()
