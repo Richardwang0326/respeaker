@@ -3,7 +3,7 @@
 import numpy as np
 import rospy
 import rospkg
-from sound_localize.msg import SoundRaw
+from respeaker.msg import SoundRaw
 from std_msgs.msg import String
 import math
 
