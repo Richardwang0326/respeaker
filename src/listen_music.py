@@ -8,9 +8,9 @@ import rospy
 import numpy as np
 import math
 from math import cos, sin, atan2, radians, degrees
-from sound_localize.msg import SoundBearing
+from respeaker.msg import SoundBearing
 from std_msgs.msg import Bool,Int64MultiArray,Int64
-from sound_localize.msg import SoundRaw
+from respeaker.msg import SoundRaw
 import librosa
 import rospkg
 from scipy.signal import butter, lfilter
